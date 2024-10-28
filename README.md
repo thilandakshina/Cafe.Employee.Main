@@ -126,5 +126,20 @@ Filter
 
 
 **Please note that this solution is not fully completed.
-More than 90% of the work on both the front and backend is completed.
+More than 90% of the work on both the front and backend is completed. 
+
+To-Do
+
+Frontend 
+
+- can break into more components
+- code optimization
+- validation
+- UI design
+
+Back End
+
+- code optimization
+- adjust db design
+- add middleware to handle global exceptions (serilog)
 
