@@ -8,8 +8,11 @@ All necessary endpoints have been added.
 
 CafeManagement System
 
---Architecture Overview
+-- Architecture Overview --
 The solution is structured into multiple projects following clean architecture:
+
+![image](https://github.com/user-attachments/assets/a6a9d9b0-347a-44a3-a22f-bf3ea57d3fd7)
+
 
 Cafe.API: Web API project handling HTTP requests
 Cafe.Business: Core business logic, CQRS implementation
@@ -24,27 +27,26 @@ Repository Pattern: Abstract data access layer
 Clean Architecture: Separation of concerns with clear dependencies
 Unit Testing: Using NUnit and Moq for business logic validation
 
--- Project Structure
-Cafe.Business
+-- Project Structure --
+
+1. Cafe.Business
 
 Commands: Write operations (Create, Update, Delete)
 
 Cafe Commands (Create, Update, Delete)
 Employee Commands (Create, Update, Delete)
 
-
 Queries: Read operations
 
 Cafe Queries
 Employee Queries
-
 
 Handlers: Command and Query handlers
 Validators: Command validation logic
 DTOs: Data Transfer Objects
 MappingProfiles: AutoMapper configurations
 
-Cafe.Data
+2. Cafe.Data
 
 Entities: Domain models
 
@@ -56,19 +58,19 @@ Context: DbContext and database configuration
 Repositories: Data access implementation
 Migrations: Database schema versions
 
-Cafe.API
-
-Controllers: REST API endpoints
-Middleware: Request/Response pipeline components
-Configuration: Application settings
-
 Database
 
 Using SQLite as per requirements
 Database file: cafe.db
 Migrations handled through Entity Framework Core
 
--- Testing
+3. Cafe.API
+
+Controllers: REST API endpoints
+Middleware: Request/Response pipeline components
+Configuration: Application settings
+
+4. Testing
 
 NUnit test framework
 Moq for mocking dependencies
@@ -77,7 +79,7 @@ Command handler tests
 Query handler tests
 
 
-![image](https://github.com/user-attachments/assets/db769d51-4029-4ade-a683-317945635e10)
+
 
 
 # Cafe.Employee.FE
