@@ -100,7 +100,7 @@ Main Page
 Add New
 ![image](https://github.com/user-attachments/assets/2b491acc-2cef-4a3b-a20d-20e369f43438)
 
-Edit
+Edit (when you edit you'll get error, haven't fixed that issue)
 ![image](https://github.com/user-attachments/assets/1857c5bf-fee9-4415-9159-83d5296b9787)
 
 
