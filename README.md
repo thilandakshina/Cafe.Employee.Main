@@ -1,4 +1,4 @@
-All necessary endpoints have been added.
+
 
 ![image](https://github.com/user-attachments/assets/cda7e9c9-9a88-4eef-939d-df5710a7f58a)
 
@@ -18,6 +18,7 @@ Cafe.API: Web API project handling HTTP requests
 Cafe.Business: Core business logic, CQRS implementation
 Cafe.Data: Data access layer with Entity Framework Core
 Cafe.Business.Test: Unit tests for business logic
+
 
 Key Design Patterns & Principles
 
@@ -79,6 +80,9 @@ Command handler tests
 Query handler tests
 
 
+All necessary endpoints have been added.
+
+![image](https://github.com/user-attachments/assets/7a4581c9-fcc4-42b7-94c6-50e54950fc35)
 
 
 
