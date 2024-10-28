@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CafeManagement/Cafe.Data/bin/Debug/net8.0
+/CafeManagement/Cafe.Data/obj
+/CafeManagement/Cafe.Business.Test/bin
+/CafeManagement/Cafe.Business.Test/obj

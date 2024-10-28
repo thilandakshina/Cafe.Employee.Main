@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe.Data", "Cafe.Data\Cafe.Data.csproj", "{FA2CBB7F-6B7A-4F41-81F9-CD85487B7DA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe.API", "Cafe.API\Cafe.API.csproj", "{F52AED5E-3F82-45E1-B3E4-29BBB436B73E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe.Business", "Cafe.Business\Cafe.Business.csproj", "{042597EC-2DE3-4855-B3ED-DA8A281CB109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86105D27-BFB3-41F0-993D-425D7FDFEF4D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		..\..\..\Thales\GitLab\ThalesGroup.StudentEnrollmentBE\Dockerfile = ..\..\..\Thales\GitLab\ThalesGroup.StudentEnrollmentBE\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6FD1D53E-DC77-4F12-866E-1F6EE591A468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafe.Business.Test", "Cafe.Business.Test\Cafe.Business.Test.csproj", "{B4AD1746-4D0B-4A61-A439-3212902021A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA2CBB7F-6B7A-4F41-81F9-CD85487B7DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2CBB7F-6B7A-4F41-81F9-CD85487B7DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2CBB7F-6B7A-4F41-81F9-CD85487B7DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2CBB7F-6B7A-4F41-81F9-CD85487B7DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52AED5E-3F82-45E1-B3E4-29BBB436B73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52AED5E-3F82-45E1-B3E4-29BBB436B73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52AED5E-3F82-45E1-B3E4-29BBB436B73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52AED5E-3F82-45E1-B3E4-29BBB436B73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042597EC-2DE3-4855-B3ED-DA8A281CB109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042597EC-2DE3-4855-B3ED-DA8A281CB109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042597EC-2DE3-4855-B3ED-DA8A281CB109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042597EC-2DE3-4855-B3ED-DA8A281CB109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4AD1746-4D0B-4A61-A439-3212902021A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AD1746-4D0B-4A61-A439-3212902021A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AD1746-4D0B-4A61-A439-3212902021A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AD1746-4D0B-4A61-A439-3212902021A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4AD1746-4D0B-4A61-A439-3212902021A6} = {6FD1D53E-DC77-4F12-866E-1F6EE591A468}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40B08F8F-BF74-46AD-9E97-A5A4DF1234CD}
+	EndGlobalSection
+EndGlobal

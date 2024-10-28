@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  cafeapi:
+    image: cafemanagement
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+      - "8443:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80;https://+:443
+    volumes:
+      - sqlite_data:/app/Cafe.Data/Database
+    networks:
+      - cafe_network
+
+networks:
+  cafe_network:
+    driver: bridge
+
+volumes:
+  sqlite_data:

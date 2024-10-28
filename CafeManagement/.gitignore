@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Cafe.API/bin/Debug/net8.0
+/Cafe.API/obj
+/Cafe.Business/bin/Debug/net8.0
+/Cafe.Business/obj
