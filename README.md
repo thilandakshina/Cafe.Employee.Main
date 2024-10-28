@@ -122,5 +122,5 @@ Filter
 
 
 **Please note that this solution is not fully completed.
-More than 75% of the work on both the front and backend is completed.
+More than 90% of the work on both the front and backend is completed.
 
