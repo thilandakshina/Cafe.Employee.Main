@@ -1,10 +1,81 @@
 All necessary endpoints have been added.
 
+![image](https://github.com/user-attachments/assets/cda7e9c9-9a88-4eef-939d-df5710a7f58a)
+
 1. Navigate to the Project Directory -> CafeManagement
 2. Open CafeManagement.sln using visual studio 
 3. Set Cafe.API as starup project.
 
-I've implemented the CQRS Design Pattern using MediatR, allowing for efficient testing. However, due to time constraints, I couldn't integrate an NUnit project with Moq.
+CafeManagement System
+
+--Architecture Overview
+The solution is structured into multiple projects following clean architecture:
+
+Cafe.API: Web API project handling HTTP requests
+Cafe.Business: Core business logic, CQRS implementation
+Cafe.Data: Data access layer with Entity Framework Core
+Cafe.Business.Test: Unit tests for business logic
+
+Key Design Patterns & Principles
+
+CQRS (Command Query Responsibility Segregation): Separates read and write operations
+Mediator Pattern: Using MediatR for handling commands and queries
+Repository Pattern: Abstract data access layer
+Clean Architecture: Separation of concerns with clear dependencies
+Unit Testing: Using NUnit and Moq for business logic validation
+
+-- Project Structure
+Cafe.Business
+
+Commands: Write operations (Create, Update, Delete)
+
+Cafe Commands (Create, Update, Delete)
+Employee Commands (Create, Update, Delete)
+
+
+Queries: Read operations
+
+Cafe Queries
+Employee Queries
+
+
+Handlers: Command and Query handlers
+Validators: Command validation logic
+DTOs: Data Transfer Objects
+MappingProfiles: AutoMapper configurations
+
+Cafe.Data
+
+Entities: Domain models
+
+CafeEntity
+EmployeeEntity
+
+
+Context: DbContext and database configuration
+Repositories: Data access implementation
+Migrations: Database schema versions
+
+Cafe.API
+
+Controllers: REST API endpoints
+Middleware: Request/Response pipeline components
+Configuration: Application settings
+
+Database
+
+Using SQLite as per requirements
+Database file: cafe.db
+Migrations handled through Entity Framework Core
+
+-- Testing
+
+NUnit test framework
+Moq for mocking dependencies
+Focus on business logic testing
+Command handler tests
+Query handler tests
+
 
 ![image](https://github.com/user-attachments/assets/db769d51-4029-4ade-a683-317945635e10)
 
@@ -18,17 +89,33 @@ Navigate to the Project Directory -> cafe-employee-manager
 
 
 Main Page
-![image](https://github.com/user-attachments/assets/19e5de7e-5059-469e-a377-6b15f7c764aa)
+![image](https://github.com/user-attachments/assets/2cd8dd03-7f1d-4c27-837f-9cf1ee6c3725)
+
 Add New
-![image](https://github.com/user-attachments/assets/c4db8858-4792-4c9e-b48f-4e769da48ea1)
+![image](https://github.com/user-attachments/assets/2b491acc-2cef-4a3b-a20d-20e369f43438)
+
 Edit
-![image](https://github.com/user-attachments/assets/d673e19c-b1aa-41ea-8fd4-487d76b204fb)
+![image](https://github.com/user-attachments/assets/1857c5bf-fee9-4415-9159-83d5296b9787)
+
 
 Employees Page
-![image](https://github.com/user-attachments/assets/75255ecd-5433-47b0-af2b-eec0bf722989)
+![image](https://github.com/user-attachments/assets/053f8230-10d4-4be2-910c-2a994124dffc)
 
-Add New
-![image](https://github.com/user-attachments/assets/6521a8b5-3114-47e6-bcf4-23b084dbe590)
+
+Add New  ( when you edit only the cafe assignment is working now and while adding you get an error. but It is already saved. you can go to the list page and see.)
+![image](https://github.com/user-attachments/assets/781b84a4-fa58-4217-8750-2b10c0de983c)
+
+Edit ( when you edit only the cafe assignment is working now)
+![image](https://github.com/user-attachments/assets/2e8dd3af-32bd-4486-a33a-696611b9cd59)
+
+
+Filter
+
+![image](https://github.com/user-attachments/assets/03d7ae25-944b-4058-8766-7db9f10e7cb5)
+![image](https://github.com/user-attachments/assets/26a71106-1491-42bd-a76d-0400efc6cf65)
+
+
+
 
 
 
